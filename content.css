@@ -1,0 +1,75 @@
+.passwordCheckerStatusPass {
+  transition: background-color 0.02s linear;
+  background-color: #defddf !important;
+}
+
+.passwordCheckerStatusFail {
+  transition: background-color 0.02s linear;
+  background-color: #ffcccb !important;
+}
+
+/* password checker */
+
+.password-checker {
+  position: relative;
+}
+
+.password-checker__icon {
+  position: absolute;
+  width: 10px;
+  max-width: 10px;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.password-checker__icon.strong {
+  background-color: green;
+  color: white;
+}
+
+.password-checker__icon.good {
+  background-color: orange;
+  color: black;
+}
+
+.password-checker__icon.weak {
+  background-color: red;
+  color: white;
+}
+
+.password-checker__balloon {
+  display: none;
+}
+
+.password-checker__balloon-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+  position: absolute;
+  z-index: 99999;
+  opacity: 0.75;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.password-checker__balloon-text {
+  border-radius: 5px;
+  padding: 10px 20px !important;
+  margin: 0 !important;
+  background-color: black;
+  position: absolute;
+  z-index: 99999;
+  opacity: 0.75;
+  color: white;
+  font-family: Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 100 !important;
+  text-align: left !important;
+  line-height: 13px !important;
+}
